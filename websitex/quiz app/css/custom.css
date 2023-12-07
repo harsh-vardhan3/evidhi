@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+body{
+    background-image: url("../images/bg.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+h1{
+    position: relative;
+    font-size: 14vw;
+    color: #d6d8e4;
+    -webkit-text-stroke: 0.3vw #383d52;
+    margin-top: 100px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    
+
+}
+h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(47, 8, 73);
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid rgb(47, 8, 73);
+    overflow: hidden;  
+    animation: animate 3s linear infinite;   
+}
+
+@keyframes animate{
+    0%,10%,100%
+    {
+         width: 0;
+    }
+    70%,90%
+    {
+         width: 100%;
+    }
+}
+.main {
+    width:100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 35rem;
+    box-shadow: 0px 0px 5px grey;
+    display: flex;
+    background-color: white; 
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    flex-direction: column;
+
+    background-image: linear-gradient(45deg, grey,rgb(48, 46, 46));
+}
+
+.col{
+    text-align: justify;
+    padding: 15px;
+    width: 100%;
+}
+#submit {
+    width: 100%;
+    background-color: rgb(47, 8, 73);
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    font-size: 25px;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+.box {
+    box-shadow: 0px -1px 1px grey;
+    width: 100%;
+}
+.score{
+    width: 35rem;
+    box-shadow: 0px 0px 5px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: white; 
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, grey,rgb(48, 46, 46));
+}
+.score h3{
+    font-size: 30px;
+}
+.scorebutton button{
+    padding: 10px 20px;
+    background-color: rgb(47, 8, 73);
+    color: white;
+    text-align: center;
+    border: none; 
+    border-radius: 5px;
+    white-space: nowrap;
+    margin: 20px;
+    font-size: 19px;
+
+}
+.scorebutton button:hover{
+    background-color: rgb(15, 15, 15);
+}
+.scorebutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+/* .percentage-container .circular-progress{
+    width:250px;
+    height:250px;
+    background: conic-gradient(#c40094 3.6deg,rgba(255,255,255,0.1) 0deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.circular-progress .progress-value{
+    font-size: 30px;
+    font-style: italic;
+
+} */
