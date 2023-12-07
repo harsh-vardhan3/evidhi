@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Professional Website</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Home</a>
+      <a class="navbar-brand" href="/about">About Us</a>
+      <div class="ml-auto">
+        <!-- Profile Section -->
+        <div class="profile-section">
+          <span>Welcome, <%= userName.name %></span>
+        </div>
+        <!-- Logout Button -->
+        <a class="btn btn-outline-danger" href="/logout">Logout</a>
+      </div>
+    </nav>
+
+    <!-- Search Column -->
+    <!-- Update the form action to use /search without :key -->
+<!-- Update the form action to use /search without :key -->
+<form action="/search:keyword" method="GET">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search..." name="keyword" />
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </div>
+    </div>
+</form>
+
+
+      </form>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Your custom scripts -->
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>

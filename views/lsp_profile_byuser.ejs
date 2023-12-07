@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LSP Profile</title>
+    <!-- Include necessary stylesheets and scripts, such as Bootstrap and Stripe.js -->
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>LSP Profile</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+      <!-- Profile Details -->
+      <!-- D:\Project e vidhi\views\lsp_profile_byuser.ejs -->
+
+      <h2>Lawyer Profile</h2>
+      <p>Name: <%= lawyer.name %></p>
+      <p>Specialization: <%= lawyer.speciality %></p>
+      <p>Email: <%= lawyer.email %></p>
+      <!-- Add more profile details as needed -->
+
+      <!-- Payment Option -->
+      <section id="payment-option">
+        <h2>Make a Payment</h2>
+        <!-- Integrate payment form using Stripe.js or your chosen payment gateway -->
+        <form id="payment-form">
+          <!-- Payment form fields -->
+          <!-- ... -->
+          <button type="submit" method="post" action="/pay">Pay Now</button>
+        </form>
+      </section>
+
+      <!-- Leaderboard Section -->
+      <section id="leaderboard">
+        <h2>Leaderboard</h2>
+        <!-- Fetch and display lawyer's current position in the leaderboard -->
+        <p>Current Position: <%= lawyer.leaderboardPosition %></p>
+        <!-- Add more leaderboard details as needed -->
+      </section>
+
+      <!-- Link to lsp_profile_byuser page -->
+      <section>
+        <!-- You may want to replace "lsp_profile_byuser" with the correct page name -->
+        <a href="/lsp_profile_byuser?id=<%= lawyer.id %>">View Full Profile</a>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2023 LSP Profile</p>
+    </footer>
+
+    <!-- Include necessary scripts, such as Stripe.js -->
+  </body>
+</html>

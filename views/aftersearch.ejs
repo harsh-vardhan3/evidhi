@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results</title>
+  </head>
+  <body>
+    <h1>Search Results for "<%= keyword %>"</h1>
+
+    <% if (results.length > 0) { %>
+    <ul>
+      <% results.forEach(result => { %>
+      <li>
+        <a href="/lawyer/<%= result.id %>">
+          <strong>Name:</strong> <%= result.name %><br />
+          <strong>Email:</strong> <%= result.email %><br />
+          <strong>Speciality:</strong> <%= result.speciality %>
+        </a>
+      </li>
+      <% }) %>
+    </ul>
+    <% } else { %>
+    <p>No results found.</p>
+    <% } %>
+  </body>
+</html>
