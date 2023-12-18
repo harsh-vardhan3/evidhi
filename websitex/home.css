@@ -24,9 +24,10 @@
     height: 80vh;
 }
 .logo{
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
     cursor: pointer;
+    border-radius: 100%;
 }
 .navbar{ 
     margin: auto;
