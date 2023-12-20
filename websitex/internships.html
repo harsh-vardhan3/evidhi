@@ -21,9 +21,13 @@
       body {
         font-family: Arial, sans-serif;
       }
-
+      h4 {
+        font-weight: bold;
+      }
       p {
+        margin-top: 15px;
         text-align: justify;
+        font-size: 15px;
       }
       a {
         color: #214b74;
@@ -35,9 +39,8 @@
         color: #648fcc;
       }
       .internship-container {
-        margin-top: 40px;
+        margin-top: 20px;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-evenly;
       }
 
@@ -50,6 +53,19 @@
         box-sizing: border-box;
         text-align: center;
         border-radius: 10%;
+      }
+      @media screen and (max-width: 800px) {
+        h4 {
+          font-size: 15px;
+          font-weight: bold;
+        }
+        p {
+          font-size: 11px;
+        }
+        .internship-container {
+          display: flex;
+          justify-content: space-evenly;
+        }
       }
     </style>
   </head>
@@ -82,8 +98,8 @@
       </div>
       <div class="internship-container">
         <div class="internship-box">
-          <h2>🚀 Legal Innovation Internship</h2>
-          <br />
+          <h4>🚀 Legal Innovation Internship</h4>
+
           <p>
             Embark on a journey of legal innovation! Join Evidhi's Legal
             Innovation Internship and work alongside seasoned professionals in
@@ -97,8 +113,8 @@
         </div>
 
         <div class="internship-box">
-          <h2>🔍 Dispute Resolution Internship</h2>
-          <br />
+          <h4>🔍 Dispute Resolution Internship</h4>
+
           <p>
             Dive into the world of alternative dispute resolution! Evidhi is
             offering a Dispute Resolution Internship where you'll collaborate
@@ -112,8 +128,8 @@
         </div>
 
         <div class="internship-box">
-          <h2>📝 Legal Writing and Research Internship</h2>
-          <br />
+          <h4>📝 Legal Writing and Research Internship</h4>
+
           <p>
             Calling all legal enthusiasts! Evidhi presents a Legal Writing and
             Research Internship for those passionate about crafting compelling
