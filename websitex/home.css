@@ -208,9 +208,7 @@
 #bot-image {
   width: 230px;
 }
-<style>
-    /* Style for the dropdown container */
-    .dropdown {
+.dropdown {
   position: relative;
   display: inline-block;
 }
